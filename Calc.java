@@ -48,7 +48,16 @@ public class Calc {
 
       System.out.println("Welcome to the Java CLI Calculator! \n This calculator performs operations on two numbers. \n Please type your first number \n");
           Scanner sc1 = new Scanner(System.in);
-          double firstNum = sc1.nextInt();
+          String firstInput = sc1.next();
+          double firstNum = 0.0; 
+          
+          if(firstInput.equals("exit")){
+            System.exit(0);
+          } else{
+            firstNum = Double.parseDouble(firstInput);
+          }
+
+          // double firstNum = sc1.nextInt();
       
           System.out.println("Great! Now input your second number.");
           Scanner sc2 = new Scanner(System.in);
