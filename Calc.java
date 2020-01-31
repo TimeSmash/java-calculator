@@ -38,8 +38,9 @@ public class Calc {
       return firstNum / secondNum;
     }
 
-    public static void mainMenuMessage(){
-      System.out.println("Returning to main menu...");
+    public static void backToMainMenu(){
+      System.out.println("Returning to main menu...\n");
+      wholeThing();
     }
     public static void wholeThing(){
       System.out.println("Welcome to the Java CLI Calculator! \n This calculator performs operations on two numbers. \n Please type your first number \n Type 'exit' to exit at anytime! \n");
@@ -76,32 +77,27 @@ public class Calc {
            switch (operator){
              case "+":
                 System.out.println(calc1.num1 + " plus " + calc1.num2 + " equals "+ calc1.num1 + " plus " + calc1.num2 + " equals "+calc1.add(firstNum, secondNum));
-                mainMenuMessage();
-                wholeThing();
+                backToMainMenu();
                 break;
               case "-":
                 System.out.println(calc1.num1 + " minus " + calc1.num2 + " equals "+calc1.subtract(firstNum, secondNum));
-                mainMenuMessage();
-                wholeThing();
+                backToMainMenu();
                 break;
               case "*":
                 System.out.println(calc1.num1 + " multiplied by " + calc1.num2 + " equals "+calc1.multiply(firstNum, secondNum));
-                mainMenuMessage();
-                wholeThing();
+                backToMainMenu();
                 break;
               case "**":
                 System.out.println(calc1.num1 + " raised to the power of " + calc1.num2 + " equals "+calc1.expontentiate(firstNum, secondNum));
-                mainMenuMessage();
-                wholeThing();
+                backToMainMenu();
                 break;
               case "/":
                 System.out.println(calc1.num1 + " divided by " + calc1.num2 + " equals "+calc1.divide(firstNum, secondNum));
-                mainMenuMessage();
-                wholeThing();
+                backToMainMenu();
                 break;
               default:
-                System.out.println("Input not recognized. Returning to main menu...");
-                wholeThing();
+                System.out.println("Input not recognized.");
+                backToMainMenu();
                 break;
            }
           //  System.out("Press A to return to main menu.")
