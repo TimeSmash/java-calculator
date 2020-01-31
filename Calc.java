@@ -104,11 +104,6 @@ public class Calc {
     }
     //main
     public static void main(String[] args) {
-      // System.out.println("Type something!");
-      // Scanner sc = new Scanner(System.in);
-      // double i = sc.nextInt();
-      // System.out.println("You typed " + i +"!");
-
       wholeThing();
   }
 }
