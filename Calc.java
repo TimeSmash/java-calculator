@@ -15,9 +15,9 @@ public class Calc {
 
     //main
     public static void main(String[] args) {
-      
-  
-      System.out.println(lemonadeStand);
-      System.out.println(cookieShop);
+      System.out.println("Type something!");
+      Scanner sc = new Scanner(System.in);
+      int i = sc.nextInt();
+      System.out.println("You typed " + i +"!");
     }
 }
