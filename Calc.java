@@ -53,14 +53,14 @@ public class Calc {
           } else{
             firstNum = Double.parseDouble(firstInput);
           }
-
           // double firstNum = sc1.nextInt();
+
       
           System.out.println("\nGreat! Now input your second number.\n");
-          Scanner sc2 = new Scanner(System.in);
-          String secondInput = sc2.next();
+          
+          String secondInput = sc1.next();
           double secondNum = 0.0;
-
+          
           if(secondInput.equals("exit")){
             System.exit(0);
           } else{
@@ -71,9 +71,9 @@ public class Calc {
 
           System.out.println("\nAwesome! Now, choose the operation you want.\n Type + for addition\n Type - for subtraction\n Type * for multiplication\n Type ** to raise the first number to the power of the second\n Type / to divide");
 
-          Scanner sc3 = new Scanner(System.in);
-          String operator = sc3.next();
           
+          String operator = sc1.next();
+
            switch (operator){
              case "+":
                 System.out.println(calc1.num1 + " plus " + calc1.num2 + " equals "+ calc1.num1 + " plus " + calc1.num2 + " equals "+calc1.add(firstNum, secondNum));
@@ -95,14 +95,15 @@ public class Calc {
                 System.out.println(calc1.num1 + " divided by " + calc1.num2 + " equals "+calc1.divide(firstNum, secondNum));
                 backToMainMenu();
                 break;
+              case "exit":
+                System.exit(0);
+                break;
               default:
                 System.out.println("Input not recognized.");
                 backToMainMenu();
                 break;
            }
-          //  System.out("Press A to return to main menu.")
     }
-    //main
     public static void main(String[] args) {
       wholeThing();
   }
