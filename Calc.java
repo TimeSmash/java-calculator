@@ -39,10 +39,18 @@ public class Calc {
     }
 
     public static void backToMainMenu(){
-      System.out.println("Returning to main menu...\n");
+      System.out.println("\nReturning to main menu...\n");
       wholeThing();
     }
+
+    
     public static void wholeThing(){
+      try{
+        Thread.sleep(500);
+      }
+      catch(InterruptedException ex) {
+        Thread.currentThread().interrupt();
+      }
       System.out.println("Welcome to the Java CLI Calculator! \n This calculator performs operations on two numbers. \n Please type your first number \n Type 'exit' to exit at anytime! \n");
           Scanner sc1 = new Scanner(System.in);
           String firstInput = sc1.next();
@@ -106,5 +114,5 @@ public class Calc {
     }
     public static void main(String[] args) {
       wholeThing();
-  }
+    }
 }
