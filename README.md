@@ -2,7 +2,7 @@
 Simple Java calculator for use in a CLI
 
 Related to the Medium article: *Building a Simple CLI Calculator App in Java*
-LINK
+Link: https://medium.com/swlh/building-a-simple-cli-calculator-app-in-java-4a2de3484284
 
 ## Overview
 
