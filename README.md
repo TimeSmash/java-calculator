@@ -12,10 +12,10 @@ The calculator can add, subtract, multiply, expontentiate, and divide.
 
 ## Setup and Rationale
 
-All numerical inputs are of the `double` datatype as I wanted to account for the possiblity of large numbers.
+All numerical inputs are of the `double` datatype as I wanted to account for the possiblity of decimal numbers.
 The first number received is the one that has operations performed on it (i.e. it is subtracted from, divided from.)
 
-To give myself a little variety, I used Math.pow for the exponentiation function. It will just raise the first number by the second number. 
+To give myself a little variety, I used Math.pow for the exponentiation function. It will just raise the first number by the second number. Additionally, typecasting is used to account for large numbers
 
 To receive inputs, Scanner is used. A check for the word 'exit' is first performed, and if not, the input is converted to a double.
 This means, however, there is the possibility for an error if the user types in other non-numerical characters (See Future Considerations)
